@@ -28,6 +28,7 @@ Users should be able to:
 ![](./images/Front-end_mentor-1_%20(1).png)
 ![](./images/Front-end_mentor-1_%20(2).png)
 
+
 <div align="center">
 
 ![](./images/video.gif)
@@ -36,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/MURlL0/Front-end_Mentor/tree/main/Front-end_mentor-1)
+- Solution URL: [Solution URL here](https://github.com/MURlL0/Front-end_Mentor/tree/main/Front-end_mentor-1 ("Título do link" target="_blank"))
 - Live Site URL: [Live site URL here](https://murll0.github.io/Front-end_mentor-1/)
 
 ## My process
