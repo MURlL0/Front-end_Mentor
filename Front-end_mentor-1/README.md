@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/MURlL0/Front-end_Mentor/tree/main/Front-end_mentor-1 ("Título do link" target="_blank"))
+- Solution URL: [Solution URL here](https://github.com/MURlL0/Front-end_Mentor/tree/main/Front-end_mentor-1)
 - Live Site URL: [Live site URL here](https://murll0.github.io/Front-end_mentor-1/)
 
 ## My process
