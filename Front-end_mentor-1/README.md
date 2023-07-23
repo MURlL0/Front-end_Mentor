@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MURlL0/Front-end_Mentor/tree/main/Front-end_mentor-1)
-- Live Site URL: [Add live site URL here](https://murll0.github.io/Front-end_mentor-1/)
+- Solution URL: [Solution URL here](https://github.com/MURlL0/Front-end_Mentor/tree/main/Front-end_mentor-1)
+- Live Site URL: [Live site URL here](https://murll0.github.io/Front-end_mentor-1/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - SCSS custom properties
-- Flexbox
+- Flex box
 - CSS Grid
 - Web-first workflow
 - [Styled Components](https://styled-components.com/) - For styles
@@ -56,4 +56,4 @@ Users should be able to:
 
 
 - Website - [Murilo Rodrigues](https://murll0.github.io/Site-Portifolio/)
-- Frontend Mentor - [@MURlL0](https://murll0.github.io/Front-end_mentor-1/)
+- Frontend Mentor - [@MURlL0](https://www.frontendmentor.io/profile/MURlL0)
