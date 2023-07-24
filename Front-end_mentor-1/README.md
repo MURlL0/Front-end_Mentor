@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/Front-end_mentor-1_.png)
-![](Front-end_mentor-1/images/Front-end_mentor-1_ (1).png)
+![](Front-end_mentor-1/images/Front-end_mentor-1_(1).png)
 ![](./images/Front-end_mentor-1_(2).png)
 
 
