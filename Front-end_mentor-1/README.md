@@ -24,9 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Front-end_mentor-1_.png)
-![](./images/Front-end_mentor-1_%20(1).png)
-![](./images/Front-end_mentor-1_%20(2).png)
+![](./images/Front-end_mentor-1.png)
+![](./images/Front-end_mentor-2.png)
+![](./images/Front-end_mentor-3.png)
+
 
 
 <div align="center">
