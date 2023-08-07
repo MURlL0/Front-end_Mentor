@@ -1,17 +1,17 @@
 # Frontend Mentor - Fylo landing page with two column layout solution
 
-This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Responsive](#responsive)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
 
 ## Overview
 
@@ -24,17 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Front-end_mentor-1.png)
-![](./images/Front-end_mentor-2.png)
-![](./images/Front-end_mentor-3.png)
+![img1](./images/Front-end_mentor-1.png)
+![img2](./images/Front-end_mentor-2.png)
+![img3](./images/Front-end_mentor-3.png)
 
+### Responsive
 
-
-<div align="center">
-
-![](./images/video.gif)
-</div>
-
+![gif1](./images/video.gif)
 
 ### Links
 
@@ -52,10 +48,7 @@ Users should be able to:
 - Web-first workflow
 - [Styled Components](https://styled-components.com/) - For styles
 
-
 ## Author
-
-
 
 - Website - [Murilo Rodrigues](https://murll0.github.io/Site-Portifolio/)
 - Frontend Mentor - [@MURlL0](https://www.frontendmentor.io/profile/MURlL0)
