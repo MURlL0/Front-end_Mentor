@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
 button {
   border: none;
   outline: none;
@@ -20,6 +25,10 @@ button {
 img {
   display: block;
   max-width: 100%;
+}
+
+input {
+  outline: none;
 }
 
 h1 {
