@@ -1,3 +1,202 @@
-body {
+.login {
   @include flex;
+  height: 100vh;
+  background-color: $redPrimary;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+
+  .container {
+    @include flex;
+    z-index: 1;
+    gap: 7.3rem;
+
+    .title {
+      @include flex;
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+      max-width: 50rem;
+      color: white;
+      gap: 2.4rem;
+
+      h1 {
+        font-size: 4.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 5.8rem;
+        letter-spacing: 0.48px;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.5rem;
+        letter-spacing: -0.064px;
+      }
+    }
+
+    .content-right {
+      @include flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      width: 100%;
+      max-width: 54rem;
+
+      .button-free {
+        width: 100%;
+
+        button {
+          width: 100%;
+          height: 6rem;
+          padding: 1.6rem 11.3rem;
+          border-radius: 0.5rem;
+          background-color: $purple;
+          font-size: 1.5rem;
+          color: white;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 0.225px;
+          border-radius: 5px;
+          border: 2px solid #844a7a;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+
+      .container-login {
+        @include flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        padding: 4rem;
+        border-radius: 0.5rem;
+        gap: 1.4rem;
+
+        form {
+          @include flex;
+          flex-direction: column;
+          gap: 2rem;
+          width: 100%;
+
+          .input-box {
+            width: 100%;
+            position: relative;
+
+            #first,
+            #last,
+            #notEmail,
+            #password {
+              display: none;
+              justify-content: end;
+              font-size: 1.1rem;
+              color: $redPrimary;
+              font-style: italic;
+              margin-top: 0.5rem;
+              font-weight: 500;
+            }
+
+            #erro1,
+            #erro2,
+            #erro3,
+            #erro4 {
+              visibility: hidden;
+              position: absolute;
+              top: 20%;
+              right: 2.5rem;
+            }
+
+            #erro1.active,
+            #erro2.active,
+            #erro3.active,
+            #erro4.active {
+              visibility: visible;
+            }
+
+            #first.active,
+            #last.active,
+            #notEmail.active,
+            #password.active {
+              display: flex;
+            }
+
+            input {
+              width: 100%;
+              height: 5.6rem;
+              border-radius: 0.4rem;
+              padding-left: 3rem;
+              border: 0.1rem solid $grayishBlue;
+
+              &:focus {
+                border: 0.1rem solid $purple;
+              }
+
+              &::placeholder {
+                color: $darkBlue;
+                font-size: 1.4rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.21px;
+              }
+            }
+          }
+          #input.active {
+            border: 0.2rem solid $redPrimary !important;
+            z-index: 2;
+          }
+
+          .button {
+            width: 100%;
+            button {
+              width: 100%;
+              background-color: $greenPrimary;
+              height: 5.6rem;
+              border-radius: 0.4rem;
+              color: white;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: 0.24px;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+
+              &:active {
+                background-color: #77e2b4;
+              }
+            }
+          }
+        }
+
+        .terms {
+          p {
+            color: $grayishBlue;
+            font-size: 1.1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.055px;
+
+            span {
+              color: $redPrimary;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
 }

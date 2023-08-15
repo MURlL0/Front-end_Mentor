@@ -60,8 +60,200 @@ a {
   font-size: 1.6rem;
 }
 
-body {
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  position: relative;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/bg-intro-desktop.png);
+}
+.login .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  gap: 7.3rem;
+}
+.login .container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  max-width: 50rem;
+  color: white;
+  gap: 2.4rem;
+}
+.login .container .title h1 {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+  letter-spacing: 0.48px;
+}
+.login .container .title p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: -0.064px;
+}
+.login .container .content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  max-width: 54rem;
+}
+.login .container .content-right .button-free {
+  width: 100%;
+}
+.login .container .content-right .button-free button {
+  width: 100%;
+  height: 6rem;
+  padding: 1.6rem 11.3rem;
+  border-radius: 0.5rem;
+  background-color: hsl(248, 32%, 49%);
+  font-size: 1.5rem;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.225px;
+  border-radius: 5px;
+  border: 2px solid #844a7a;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.login .container .content-right .button-free button span {
+  font-weight: 400;
+}
+.login .container .content-right .container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  gap: 1.4rem;
+}
+.login .container .content-right .container-login form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.login .container .content-right .container-login form .input-box {
+  width: 100%;
+  position: relative;
+}
+.login .container .content-right .container-login form .input-box #first,
+.login .container .content-right .container-login form .input-box #last,
+.login .container .content-right .container-login form .input-box #notEmail,
+.login .container .content-right .container-login form .input-box #password {
+  display: none;
+  justify-content: end;
+  font-size: 1.1rem;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+.login .container .content-right .container-login form .input-box #erro1,
+.login .container .content-right .container-login form .input-box #erro2,
+.login .container .content-right .container-login form .input-box #erro3,
+.login .container .content-right .container-login form .input-box #erro4 {
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  right: 2.5rem;
+}
+.login .container .content-right .container-login form .input-box #erro1.active,
+.login .container .content-right .container-login form .input-box #erro2.active,
+.login .container .content-right .container-login form .input-box #erro3.active,
+.login .container .content-right .container-login form .input-box #erro4.active {
+  visibility: visible;
+}
+.login .container .content-right .container-login form .input-box #first.active,
+.login .container .content-right .container-login form .input-box #last.active,
+.login .container .content-right .container-login form .input-box #notEmail.active,
+.login .container .content-right .container-login form .input-box #password.active {
+  display: flex;
+}
+.login .container .content-right .container-login form .input-box input {
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 0.4rem;
+  padding-left: 3rem;
+  border: 0.1rem solid hsl(246, 25%, 77%);
+}
+.login .container .content-right .container-login form .input-box input:focus {
+  border: 0.1rem solid hsl(248, 32%, 49%);
+}
+.login .container .content-right .container-login form .input-box input::-moz-placeholder {
+  color: hsl(249, 10%, 26%);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.21px;
+}
+.login .container .content-right .container-login form .input-box input::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.21px;
+}
+.login .container .content-right .container-login form #input.active {
+  border: 0.2rem solid hsl(0, 100%, 74%) !important;
+  z-index: 2;
+}
+.login .container .content-right .container-login form .button {
+  width: 100%;
+}
+.login .container .content-right .container-login form .button button {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  height: 5.6rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.login .container .content-right .container-login form .button button:active {
+  background-color: #77e2b4;
+}
+.login .container .content-right .container-login .terms p {
+  color: hsl(246, 25%, 77%);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.055px;
+}
+.login .container .content-right .container-login .terms p span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
