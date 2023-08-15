@@ -20,9 +20,6 @@ function validar() {
     notEmail.classList.remove('active');
     password.classList.remove('active');
 
-    const input = document.login.email.value;
-    const com = input.includes('com');
-
     if (document.login.name.value == '') {
         erro1.classList.add('active');
         first.classList.add('active');
