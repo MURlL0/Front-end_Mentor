@@ -34,7 +34,7 @@
         </div>
 
         <div class="container-login">
-          <form name="login" action="" onsubmit="return validar()">
+          <form name="login" action="" onsubmit="event.preventDefault(); return validar()">
             <div class="input-box">
               <input class="input" id="name" name="name" type="text" placeholder="First Name">
               <img src="images/icon-error.svg" alt="erro" id="erro1">
@@ -48,7 +48,7 @@
             <div class="input-box">
               <input class="input" id="email" name="email" type="email" placeholder="Email Address">
               <img src="images/icon-error.svg" alt="erro" id="erro3">
-              <p id="notEmail">Looks like this is not an email</p> 
+              <p id="notEmail">Looks like this is not an email</p>
             </div>
             <div class="input-box">
               <input class="input" id="pass" name="pass" type="password" placeholder="Password">

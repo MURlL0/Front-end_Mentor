@@ -42,6 +42,7 @@ function validar() {
     }
 
     if (document.login.pass.value == '') {
+        document.login.email.placeholder = 'Por favor, preencha este campo';
         erro4.classList.add('active');
         password.classList.add('active');
         inputB.classList.add('active');
