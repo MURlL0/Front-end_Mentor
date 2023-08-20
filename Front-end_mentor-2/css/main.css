@@ -222,7 +222,10 @@ a {
   line-height: normal;
   letter-spacing: 0.21px;
 }
-.login .container .content-right .container-login form #input.active {
+.login .container .content-right .container-login form .input1.active,
+.login .container .content-right .container-login form .input2.active,
+.login .container .content-right .container-login form .input3.active,
+.login .container .content-right .container-login form .input4.active {
   border: 0.2rem solid hsl(0, 100%, 74%) !important;
   z-index: 2;
 }

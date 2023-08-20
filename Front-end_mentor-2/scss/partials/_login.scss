@@ -154,7 +154,10 @@
               }
             }
           }
-          #input.active {
+          .input1.active,
+          .input2.active,
+          .input3.active,
+          .input4.active {
             border: 0.2rem solid $redPrimary !important;
             z-index: 2;
           }

@@ -6,7 +6,10 @@ const first = document.querySelector('#first');
 const last = document.querySelector('#last');
 const notEmail = document.querySelector('#notEmail');
 const password = document.querySelector('#password');
-const inputB = document.querySelector('.input');
+const input1 = document.querySelector('.input1');
+const input2 = document.querySelector('.input2');
+const input3 = document.querySelector('.input3');
+const input4 = document.querySelector('.input4');
 const btn = document.querySelector('#btn');
 
 function validar() {
@@ -16,36 +19,61 @@ function validar() {
     erro4.classList.remove('active');
     first.classList.remove('active');
     last.classList.remove('active');
-    inputB.classList.remove('active');
+    input1.classList.remove('active');
+    input2.classList.remove('active');
+    input3.classList.remove('active');
+    input4.classList.remove('active');
     notEmail.classList.remove('active');
     password.classList.remove('active');
 
-    if (document.login.name.value == '') {
+    const name = document.login.name.value == '';
+    const lastName = document.login.lastName.value == '';
+    const email = document.login.email.value == '';
+    const pass = document.login.pass.value == '';
+
+    if (name && lastName && email && pass) {
         erro1.classList.add('active');
         first.classList.add('active');
-        inputB.classList.add('active');
-        return false;
-    }
-    if (document.login.lastName.value == '') {
+        input1.classList.add('active');
+        input2.classList.add('active');
+        input3.classList.add('active');
+        input4.classList.add('active');
         erro2.classList.add('active');
         last.classList.add('active');
-        inputB.classList.add('active');
-        return false;
-    }
-
-    if (document.login.email.value == '') {
         erro3.classList.add('active');
         notEmail.classList.add('active');
-        inputB.classList.add('active');
+        document.login.email.placeholder = 'email@example/com';
+        erro4.classList.add('active');
+        password.classList.add('active');
+        return false;
+    }
+
+    if (name) {
+        erro1.classList.add('active');
+        first.classList.add('active');
+        input1.classList.add('active');
+        return false;
+    }
+    if (lastName) {
+        erro2.classList.add('active');
+        last.classList.add('active');
+        input2.classList.add('active');
+        return false;
+    }
+
+    if (email) {
+        erro3.classList.add('active');
+        notEmail.classList.add('active');
+        input3.classList.add('active');
 
         return false;
     }
 
-    if (document.login.pass.value == '') {
-        document.login.email.placeholder = 'Por favor, preencha este campo';
+    if (pass) {
+        document.login.email.placeholder = 'email@example/com';
         erro4.classList.add('active');
         password.classList.add('active');
-        inputB.classList.add('active');
+        input4.classList.add('active');
         return false;
     }
 }
