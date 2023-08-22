@@ -4,16 +4,12 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Poppins";
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
 }
 
 button {
@@ -68,6 +64,11 @@ a {
   background-color: hsl(0, 100%, 74%);
   position: relative;
 }
+@media (max-width: 945px) {
+  .login {
+    height: auto;
+  }
+}
 .login::before {
   content: "";
   position: absolute;
@@ -83,8 +84,15 @@ a {
   align-items: center;
   z-index: 1;
   gap: 7.3rem;
+  padding: 6.8rem 2.4rem;
 }
-.login .container .title {
+@media (max-width: 945px) {
+  .login .container {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+}
+.login .container .container-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,21 +101,41 @@ a {
   width: 100%;
   max-width: 50rem;
   color: white;
-  gap: 2.4rem;
+  gap: 2.8rem;
 }
-.login .container .title h1 {
+@media (max-width: 945px) {
+  .login .container .container-left {
+    padding: 3rem 0 4.5rem;
+  }
+}
+.login .container .container-left h1 {
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 5.8rem;
   letter-spacing: 0.48px;
 }
-.login .container .title p {
+@media (max-width: 945px) {
+  .login .container .container-left h1 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    letter-spacing: -1.2px;
+    text-align: center;
+  }
+}
+.login .container .container-left p {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
   line-height: 2.5rem;
   letter-spacing: -0.064px;
+}
+@media (max-width: 945px) {
+  .login .container .container-left p {
+    text-align: center;
+    line-height: 2.6rem;
+    letter-spacing: 0.096px;
+  }
 }
 .login .container .content-right {
   display: flex;
@@ -115,8 +143,13 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 2.4rem;
-  width: 100%;
-  max-width: 54rem;
+  width: 54rem;
+}
+@media (max-width: 945px) {
+  .login .container .content-right {
+    width: 100%;
+    max-width: 54rem;
+  }
 }
 .login .container .content-right .button-free {
   width: 100%;
@@ -124,8 +157,7 @@ a {
 .login .container .content-right .button-free button {
   width: 100%;
   height: 6rem;
-  padding: 1.6rem 11.3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   background-color: hsl(248, 32%, 49%);
   font-size: 1.5rem;
   color: white;
@@ -133,9 +165,16 @@ a {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.225px;
-  border-radius: 5px;
   border: 2px solid #844a7a;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 945px) {
+  .login .container .content-right .button-free button {
+    padding: 2.5rem 8rem;
+    height: auto;
+    text-align: center;
+    line-height: 2.6rem;
+  }
 }
 .login .container .content-right .button-free button span {
   font-weight: 400;
@@ -148,8 +187,13 @@ a {
   width: 100%;
   background-color: white;
   padding: 4rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   gap: 1.4rem;
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login {
+    padding: 2.4rem;
+  }
 }
 .login .container .content-right .container-login form {
   display: flex;
@@ -199,26 +243,35 @@ a {
 .login .container .content-right .container-login form .input-box input {
   width: 100%;
   height: 5.6rem;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   padding-left: 3rem;
   border: 0.1rem solid hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.21px;
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login form .input-box input {
+    padding-left: 2rem;
+  }
 }
 .login .container .content-right .container-login form .input-box input:focus {
   border: 0.1rem solid hsl(248, 32%, 49%);
 }
 .login .container .content-right .container-login form .input-box input::-moz-placeholder {
-  color: hsl(249, 10%, 26%);
   font-size: 1.4rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.21px;
 }
 .login .container .content-right .container-login form .input-box input::placeholder {
-  color: hsl(249, 10%, 26%);
   font-size: 1.4rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.21px;
 }
@@ -236,17 +289,28 @@ a {
   width: 100%;
   background-color: hsl(154, 59%, 51%);
   height: 5.6rem;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   color: white;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.24px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0.4rem 0.4rem 0px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login form .button button {
+    padding: 2rem;
+  }
 }
 .login .container .content-right .container-login form .button button:active {
   background-color: #77e2b4;
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login .terms {
+    text-align: center;
+    padding: 0 2rem;
+  }
 }
 .login .container .content-right .container-login .terms p {
   color: hsl(246, 25%, 77%);
@@ -255,6 +319,7 @@ a {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.055px;
+  line-height: 2.2 rem;
 }
 .login .container .content-right .container-login .terms p span {
   color: hsl(0, 100%, 74%);
