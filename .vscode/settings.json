@@ -1,0 +1,98 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "python.analysis.typeCheckingMode": "off",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "files.autoSave": "afterDelay",
+    "tabnine.experimentalAutoImports": true,
+    "editor.accessibilitySupport": "off",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "cSpell.customDictionaries": {},
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+
+    "cSpell.words": [
+        "botao",
+        "condicao",
+        "contacao",
+        "cotacao",
+        "cpassword",
+        "dolar",
+        "endereco",
+        "funcao",
+        "indentação",
+        "indice",
+        "linkedin",
+        "Linkedin",
+        "margerita",
+        "numeros",
+        "orcamento",
+        "pontuacao",
+        "posicao",
+        "preco",
+        "rodape",
+        "servico",
+        "servicos",
+        "sidenav",
+        "splitado",
+        "swiper",
+        "usuario",
+        "validalogin"
+    ],
+
+    "workbench.colorTheme": "Dracula",
+    "editor.language.brackets": [],
+    "cSpell.language": "en,\"pt-br\"",
+    "cSpell.languageSettings": [],
+    "workbench.statusBar.visible": true,
+    "settingsSync.ignoredExtensions": [],
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.tabSize": 2,
+    "editor.fontSize": 17,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"],
+    "editor.inlineSuggest.enabled": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.bracketSameLine": true,
+    "prettier.bracketSpacing": false,
+    "prettier.printWidth": 80,
+
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[scss]": {
+        
+        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+
+    "liveSassCompile.settings.showOutputWindowOn": "None",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~../css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "px-to-rem.px-per-rem": 10,
+    "px-to-rem.number-of-decimals-digits": 1,
+    "liveServer.settings.port": 5500,
+    "editor.detectIndentation": false
+}

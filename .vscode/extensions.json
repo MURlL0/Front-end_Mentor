@@ -1,0 +1,33 @@
+
+{
+    "recommendations": [
+      "sainoba.px-to-rem",
+      "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+      "streetsidesoftware.code-spell-checker",
+      "kamikillerto.vscode-colorize",
+      "dbaeumer.vscode-eslint",
+      "zignd.html-css-class-completion",
+      "pnp.polacode",
+      "esbenp.prettier-vscode",
+      "tabnine.tabnine-vscode",
+      "styled-components.vscode-styled-components",
+      "ritwickdey.liveserver",
+      "formulahendry.auto-rename-tag",
+      "gabrielgrinberg.auto-run-command",
+      "hnw.vscode-auto-open-markdown-preview",
+      "formulahendry.code-runner",
+      "krembolabs.comment-styler",
+      "dracula-theme.theme-dracula",
+      "editorconfig.editorconfig",
+      "usernamehw.errorlens",
+      "donjayamanne.githistory",
+      "github.codespaces",
+      "codezombiech.gitignore",
+      "eamodio.gitlens",
+      "ms-vscode.live-server",
+      "glenn2223.live-sass",
+      "pkief.material-icon-theme",
+      "ziyasal.vscode-open-in-github",
+      "sibiraj-s.vscode-scss-formatter"
+    ]
+}
