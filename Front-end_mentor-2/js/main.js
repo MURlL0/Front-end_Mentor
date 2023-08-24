@@ -15,15 +15,16 @@ const btn = document.querySelector('#btn');
 function validar() {
     erro1.classList.remove('active');
     erro2.classList.remove('active');
-    erro3.classList.remove('active');
     erro4.classList.remove('active');
     first.classList.remove('active');
     last.classList.remove('active');
     input1.classList.remove('active');
     input2.classList.remove('active');
+    erro3.classList.remove('active');
+    notEmail.classList.remove('active');
     input3.classList.remove('active');
     input4.classList.remove('active');
-    notEmail.classList.remove('active');
+
     password.classList.remove('active');
 
     const name = document.login.name.value == '';
@@ -65,17 +66,16 @@ function validar() {
         erro3.classList.add('active');
         notEmail.classList.add('active');
         input3.classList.add('active');
-
         return false;
     }
 
     if (pass) {
-        document.login.email.placeholder = 'email@example/com';
         erro4.classList.add('active');
         password.classList.add('active');
         input4.classList.add('active');
         return false;
     }
+   
 }
 
 btn.onclick = validar;
