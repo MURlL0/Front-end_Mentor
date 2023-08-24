@@ -54,4 +54,4 @@ Users should be able to:
 **sue perfil no front-end mentor no segundo**
 
 - Website - [Murilo Rodrigues](https://murll0.github.io/Site-Portifolio/)
-- Frontend Mentor - [@MURlL0](https://murll0.github.io/Front-end_mentor-2/)
+- Frontend Mentor - [@MURlL0](https://www.frontendmentor.io/profile/MURlL0)
