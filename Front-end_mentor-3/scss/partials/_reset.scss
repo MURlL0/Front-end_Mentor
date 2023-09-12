@@ -11,6 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: $background;
+  color: white;
+
+}
+
 button {
   border: none;
   outline: none;
@@ -25,4 +31,3 @@ img {
 input {
   outline: none;
 }
-
